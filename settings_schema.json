@@ -1,0 +1,21 @@
+{
+    "name": "Product Page Timer",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Countdown"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_timer_datetime",
+        "label": "Enable Timer Datetime",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "timer_datetime",
+        "label": "Timer Date & Time",
+        "default": "2019\/6\/14 11:27:20"
+      }
+    ]
+  },
