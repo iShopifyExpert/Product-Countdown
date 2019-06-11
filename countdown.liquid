@@ -1,0 +1,80 @@
+{% if settings.timer_datetime != blank%}
+{{ 'countdown.js' | asset_url | script_tag }}
+<div class="deals-countdown-product" data-time="{{settings.timer_datetime}}"></div>
+<style>
+  .deals-countdown-product {
+    max-width: 290px;
+    margin: 0 auto 20px;
+}
+  #countdown, .center {
+    text-align: center;
+  }
+  .padding-bottom {
+    padding-bottom: 90px;
+  }
+  .margin-bottom {
+    margin-bottom: 15px;
+  }
+  .is-countdown {
+	border: 1px solid #ccc;
+	background-color: #eee;
+  }
+  .countdown-rtl {
+	direction: rtl;
+  }
+  .countdown-holding span {
+	color: #888;
+  }
+  .countdown-row {
+	clear: both;
+	width: 100%;
+	text-align: center;
+  }
+  .countdown-show1 .countdown-section {
+	width: 100%;
+  }
+  .countdown-show2 .countdown-section {
+	width: 48%;
+  }
+  .countdown-show3 .countdown-section {
+	width: 33%;
+  }
+  .countdown-show4 .countdown-section {
+	width: 25%;
+  }
+  .countdown-show5 .countdown-section {
+	width: 20%;
+  }
+  .countdown-show6 .countdown-section {
+	width: 16.25%;
+  }
+  .countdown-show7 .countdown-section {
+	width: 14%;
+  }
+  .deals-description {
+    background: #0e8212;
+    color: #fff;
+  }
+  .countdown-section {
+	display: block;
+	float: left;
+	font-size: 2rem;
+	text-align: center;
+    background: #f8f8f8;
+    border: 1px solid #fff;
+  }
+  .countdown-amount {
+	font-size: 200%;
+  }
+  .countdown-period {
+    display: block;
+    background: #c8f3d8;
+    color: #000;
+    font-size: 12px;
+  }
+  .countdown-descr {
+	display: block;
+	width: 100%;
+  }
+</style>
+{% endif %}
